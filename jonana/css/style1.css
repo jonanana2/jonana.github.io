@@ -1,0 +1,112 @@
+/* 網頁樣式 */
+:root {
+    --mikadoYellow:#ffea00;
+    --mikadoYellowA:#fca311;
+    --pinettonOrange:#ea7317;
+    --pinettonOrangeA:#ea7217d6;
+    --greenSheen:#73bfb8;
+    --carolinaBlue:#3da5d9;
+    --greenBlue:#2364aa;
+    --greenBlueA:#A9D3FF;
+    --blue:#222;
+    --white:#ff85a1;
+    --grey:#eee;
+    --whiteA:#fff;
+}
+.btn-border {
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+    border: var(--grey) solid 1px;
+    color: var(--grey);
+    transition: all .2s;
+    margin-top: 15px;
+}
+.btn-border:hover {
+    background-color: var(--grey);
+    color: var(--white);
+}
+/* nav */
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: var(--mikadoYellowA);
+}
+.logo {
+    text-align: left;
+    line-height: 70px;
+    font-size: 30px;
+    right:50%;
+    color: var(--whiteA);
+    font-family: 'Noto Serif JP'
+}
+
+.menu li {
+    list-style-type: none;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    width: 90px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: var(--whiteA);
+    transition: all .2s;
+}
+.menu a:hover {
+    color: var(--mikadoYellow)
+}
+ul.drop-down-menu ul { /*隱藏次選單*/
+    display: none;
+}
+
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+    display: block;
+}
+ul.drop-down-menu a {
+    background-color: #fca311;
+    color: #fff;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 68px;
+}
+ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+    color: #fca311;
+}
+ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+    color: #ffea00;
+}
+/* 導覽列以下 */
+body {
+    background-color: #f6bd60;
+}
+.container1 {
+    background-color: #f6bd60;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border:solid 2.5px rgb(26, 25, 25);
+    overflow: hidden; /* 避免長方框下面顯示不正常 */
+}
+.box{
+    width: 300px;
+    float: inline-start; /* 圖片在左邊 */
+    padding: 50px 125px;
+}
+.box img{
+    display: block;
+    width: 100%;
+}
+.box text{
+    padding: 50px;
+    width: 430px;
+    padding: 20px 20px 0px 0px;
+}
